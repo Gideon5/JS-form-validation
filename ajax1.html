@@ -21,7 +21,7 @@
             var xhr = new XMLHttpRequest()
             //function to make the request
             //OPEN FUNCTION - TYPE, URL/FILE, ASYNC
-           xhr.open('GET', 'sample.txt', true)
+           xhr.open('GET', 'sampl2e.txt', true)
 
            console.log("READYSTATE: ", xhr.readyState)
 
@@ -38,6 +38,9 @@
              if(this.status == 200){
                 // console.log(this.responseText)
                 document.getElementById('text').innerHTML = this.responseText
+
+             }else if(this.status = 404){
+                document.getElementById('text').innerHTML = "Not found"
 
              }
            }
