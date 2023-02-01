@@ -1,5 +1,7 @@
 <?php
 
+//Connect to a DB   
+
 echo 'Processing';
 
 //Check for a POST variable
